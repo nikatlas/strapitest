@@ -1,3 +1,3 @@
 const strapi = require('strapi');
 
-strapi(/* {...} */).start();
+strapi({ environment: 'development' }).start();
