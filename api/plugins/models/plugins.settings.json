@@ -18,6 +18,20 @@
     },
     "link": {
       "type": "string"
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "tool": {
+      "type": "enumeration",
+      "enum": [
+        "figma",
+        "sketch",
+        "adobexd"
+      ]
     }
   }
 }
