@@ -25,13 +25,33 @@
       "plugin": "upload",
       "required": false
     },
-    "tool": {
-      "type": "enumeration",
-      "enum": [
-        "figma",
-        "sketch",
-        "adobexd"
-      ]
+    "categories": {
+      "collection": "categories",
+      "via": "plugins",
+      "dominant": true
+    },
+    "tools": {
+      "collection": "tools",
+      "via": "plugins",
+      "dominant": true
+    },
+    "author": {
+      "type": "string"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "similars": {
+      "collection": "plugins"
+    },
+    "stars": {
+      "type": "integer"
+    },
+    "last_update": {
+      "type": "date"
     }
   }
 }

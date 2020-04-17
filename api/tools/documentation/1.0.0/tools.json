@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/plugins": {
+    "/tools": {
       "get": {
         "deprecated": false,
-        "description": "Find all the plugins's records",
+        "description": "Find all the tools's records",
         "responses": {
           "200": {
-            "description": "Retrieve plugins document(s)",
+            "description": "Retrieve tools document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Plugins"
+                    "$ref": "#/components/schemas/Tools"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Plugins"
+          "Tools"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new plugins record",
+        "description": "Create a new tools record",
         "responses": {
           "200": {
-            "description": "Retrieve plugins document(s)",
+            "description": "Retrieve tools document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Plugins"
+                  "$ref": "#/components/schemas/Tools"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Plugins"
+          "Tools"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPlugins"
+                "$ref": "#/components/schemas/NewTools"
               }
             }
           }
         }
       }
     },
-    "/plugins/count": {
+    "/tools/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of plugins documents",
+        "description": "Retrieve the numver of tools documents",
         "responses": {
           "200": {
-            "description": "Retrieve plugins document(s)",
+            "description": "Retrieve tools document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Plugins"
+          "Tools"
         ],
         "parameters": []
       }
     },
-    "/plugins/{id}": {
+    "/tools/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one plugins record",
+        "description": "Find one tools record",
         "responses": {
           "200": {
-            "description": "Retrieve plugins document(s)",
+            "description": "Retrieve tools document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Plugins"
+                  "$ref": "#/components/schemas/Tools"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Plugins"
+          "Tools"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single plugins record",
+        "description": "Update a single tools record",
         "responses": {
           "200": {
-            "description": "Retrieve plugins document(s)",
+            "description": "Retrieve tools document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Plugins"
+                  "$ref": "#/components/schemas/Tools"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Plugins"
+          "Tools"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPlugins"
+                "$ref": "#/components/schemas/NewTools"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single plugins record",
+        "description": "Delete a single tools record",
         "responses": {
           "200": {
-            "description": "deletes a single plugins based on the ID supplied",
+            "description": "deletes a single tools based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Plugins"
+          "Tools"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Plugins": {
+      "Tools": {
         "required": [
           "id"
         ],
@@ -525,62 +525,7 @@
           "name": {
             "type": "string"
           },
-          "description": {
-            "type": "string"
-          },
-          "link": {
-            "type": "string"
-          },
-          "images": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "sha256": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "categories": {
+          "plugins": {
             "type": "array",
             "items": {
               "required": [
@@ -596,180 +541,57 @@
                 "description": {
                   "type": "string"
                 },
-                "plugins": {
+                "link": {
+                  "type": "string"
+                },
+                "images": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
-                }
-              }
-            }
-          },
-          "tools": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
                 },
-                "name": {
-                  "type": "string"
-                },
-                "plugins": {
+                "categories": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
+                },
+                "tools": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "author": {
+                  "type": "string"
+                },
+                "icon": {
+                  "type": "string"
+                },
+                "similars": {
+                  "type": "string"
+                },
+                "stars": {
+                  "type": "integer"
+                },
+                "last_update": {
+                  "type": "string"
                 }
               }
             }
-          },
-          "author": {
-            "type": "string"
-          },
-          "icon": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "sha256": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              }
-            }
-          },
-          "similars": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "link": {
-                "type": "string"
-              },
-              "images": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "categories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "tools": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "author": {
-                "type": "string"
-              },
-              "icon": {
-                "type": "string"
-              },
-              "similars": {
-                "type": "string"
-              },
-              "stars": {
-                "type": "integer"
-              },
-              "last_update": {
-                "type": "string"
-              }
-            }
-          },
-          "stars": {
-            "type": "integer"
-          },
-          "last_update": {
-            "type": "string"
           }
         }
       },
-      "NewPlugins": {
+      "NewTools": {
         "properties": {
           "name": {
             "type": "string"
           },
-          "description": {
-            "type": "string"
-          },
-          "link": {
-            "type": "string"
-          },
-          "categories": {
+          "plugins": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "tools": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "author": {
-            "type": "string"
-          },
-          "similars": {
-            "type": "string"
-          },
-          "stars": {
-            "type": "integer"
-          },
-          "last_update": {
-            "type": "string"
           }
         }
       }
@@ -777,7 +599,7 @@
   },
   "tags": [
     {
-      "name": "Plugins"
+      "name": "Tools"
     }
   ]
 }

@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/plugins": {
+    "/categories": {
       "get": {
         "deprecated": false,
-        "description": "Find all the plugins's records",
+        "description": "Find all the categories's records",
         "responses": {
           "200": {
-            "description": "Retrieve plugins document(s)",
+            "description": "Retrieve categories document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Plugins"
+                    "$ref": "#/components/schemas/Categories"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Plugins"
+          "Categories"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new plugins record",
+        "description": "Create a new categories record",
         "responses": {
           "200": {
-            "description": "Retrieve plugins document(s)",
+            "description": "Retrieve categories document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Plugins"
+                  "$ref": "#/components/schemas/Categories"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Plugins"
+          "Categories"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPlugins"
+                "$ref": "#/components/schemas/NewCategories"
               }
             }
           }
         }
       }
     },
-    "/plugins/count": {
+    "/categories/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of plugins documents",
+        "description": "Retrieve the numver of categories documents",
         "responses": {
           "200": {
-            "description": "Retrieve plugins document(s)",
+            "description": "Retrieve categories document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Plugins"
+          "Categories"
         ],
         "parameters": []
       }
     },
-    "/plugins/{id}": {
+    "/categories/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one plugins record",
+        "description": "Find one categories record",
         "responses": {
           "200": {
-            "description": "Retrieve plugins document(s)",
+            "description": "Retrieve categories document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Plugins"
+                  "$ref": "#/components/schemas/Categories"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Plugins"
+          "Categories"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single plugins record",
+        "description": "Update a single categories record",
         "responses": {
           "200": {
-            "description": "Retrieve plugins document(s)",
+            "description": "Retrieve categories document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Plugins"
+                  "$ref": "#/components/schemas/Categories"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Plugins"
+          "Categories"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPlugins"
+                "$ref": "#/components/schemas/NewCategories"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single plugins record",
+        "description": "Delete a single categories record",
         "responses": {
           "200": {
-            "description": "deletes a single plugins based on the ID supplied",
+            "description": "deletes a single categories based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Plugins"
+          "Categories"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Plugins": {
+      "Categories": {
         "required": [
           "id"
         ],
@@ -528,59 +528,7 @@
           "description": {
             "type": "string"
           },
-          "link": {
-            "type": "string"
-          },
-          "images": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "sha256": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "categories": {
+          "plugins": {
             "type": "array",
             "items": {
               "required": [
@@ -596,147 +544,48 @@
                 "description": {
                   "type": "string"
                 },
-                "plugins": {
+                "link": {
+                  "type": "string"
+                },
+                "images": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
-                }
-              }
-            }
-          },
-          "tools": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
                 },
-                "name": {
-                  "type": "string"
-                },
-                "plugins": {
+                "categories": {
                   "type": "array",
                   "items": {
                     "type": "string"
                   }
+                },
+                "tools": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "author": {
+                  "type": "string"
+                },
+                "icon": {
+                  "type": "string"
+                },
+                "similars": {
+                  "type": "string"
+                },
+                "stars": {
+                  "type": "integer"
+                },
+                "last_update": {
+                  "type": "string"
                 }
               }
             }
-          },
-          "author": {
-            "type": "string"
-          },
-          "icon": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "sha256": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              }
-            }
-          },
-          "similars": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "link": {
-                "type": "string"
-              },
-              "images": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "categories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "tools": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "author": {
-                "type": "string"
-              },
-              "icon": {
-                "type": "string"
-              },
-              "similars": {
-                "type": "string"
-              },
-              "stars": {
-                "type": "integer"
-              },
-              "last_update": {
-                "type": "string"
-              }
-            }
-          },
-          "stars": {
-            "type": "integer"
-          },
-          "last_update": {
-            "type": "string"
           }
         }
       },
-      "NewPlugins": {
+      "NewCategories": {
         "properties": {
           "name": {
             "type": "string"
@@ -744,32 +593,11 @@
           "description": {
             "type": "string"
           },
-          "link": {
-            "type": "string"
-          },
-          "categories": {
+          "plugins": {
             "type": "array",
             "items": {
               "type": "string"
             }
-          },
-          "tools": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "author": {
-            "type": "string"
-          },
-          "similars": {
-            "type": "string"
-          },
-          "stars": {
-            "type": "integer"
-          },
-          "last_update": {
-            "type": "string"
           }
         }
       }
@@ -777,7 +605,7 @@
   },
   "tags": [
     {
-      "name": "Plugins"
+      "name": "Categories"
     }
   ]
 }
