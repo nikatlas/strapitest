@@ -26,8 +26,8 @@
       "required": false
     },
     "categories": {
-      "collection": "categories",
       "via": "plugins",
+      "collection": "categories",
       "dominant": true
     },
     "tools": {

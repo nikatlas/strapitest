@@ -582,6 +582,31 @@
                 }
               }
             }
+          },
+          "parent": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "plugins": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "parent": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -598,6 +623,9 @@
             "items": {
               "type": "string"
             }
+          },
+          "parent": {
+            "type": "string"
           }
         }
       }

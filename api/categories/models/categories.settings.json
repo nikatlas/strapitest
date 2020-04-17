@@ -17,8 +17,11 @@
       "type": "string"
     },
     "plugins": {
-      "via": "categories",
-      "collection": "plugins"
+      "collection": "plugins",
+      "via": "categories"
+    },
+    "parent": {
+      "model": "categories"
     }
   }
 }
