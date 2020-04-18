@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/tools": {
+    "/authors": {
       "get": {
         "deprecated": false,
-        "description": "Find all the tools's records",
+        "description": "Find all the authors's records",
         "responses": {
           "200": {
-            "description": "Retrieve tools document(s)",
+            "description": "Retrieve authors document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Tools"
+                    "$ref": "#/components/schemas/Authors"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Tools"
+          "Authors"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new tools record",
+        "description": "Create a new authors record",
         "responses": {
           "200": {
-            "description": "Retrieve tools document(s)",
+            "description": "Retrieve authors document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tools"
+                  "$ref": "#/components/schemas/Authors"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Tools"
+          "Authors"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTools"
+                "$ref": "#/components/schemas/NewAuthors"
               }
             }
           }
         }
       }
     },
-    "/tools/count": {
+    "/authors/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of tools documents",
+        "description": "Retrieve the numver of authors documents",
         "responses": {
           "200": {
-            "description": "Retrieve tools document(s)",
+            "description": "Retrieve authors document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Tools"
+          "Authors"
         ],
         "parameters": []
       }
     },
-    "/tools/{id}": {
+    "/authors/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one tools record",
+        "description": "Find one authors record",
         "responses": {
           "200": {
-            "description": "Retrieve tools document(s)",
+            "description": "Retrieve authors document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tools"
+                  "$ref": "#/components/schemas/Authors"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Tools"
+          "Authors"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single tools record",
+        "description": "Update a single authors record",
         "responses": {
           "200": {
-            "description": "Retrieve tools document(s)",
+            "description": "Retrieve authors document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tools"
+                  "$ref": "#/components/schemas/Authors"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Tools"
+          "Authors"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTools"
+                "$ref": "#/components/schemas/NewAuthors"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single tools record",
+        "description": "Delete a single authors record",
         "responses": {
           "200": {
-            "description": "deletes a single tools based on the ID supplied",
+            "description": "deletes a single authors based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Tools"
+          "Authors"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Tools": {
+      "Authors": {
         "required": [
           "id"
         ],
@@ -525,76 +525,58 @@
           "name": {
             "type": "string"
           },
-          "plugins": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "images": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "tools": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "icon": {
-                  "type": "string"
-                },
-                "similars": {
-                  "type": "string"
-                },
-                "stars": {
-                  "type": "integer"
-                },
-                "last_update": {
-                  "type": "string"
-                },
-                "short_description": {
-                  "type": "string"
-                },
-                "links": {
-                  "type": "string"
-                },
-                "author": {
-                  "type": "string"
-                }
+          "icon": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "sha256": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
               }
             }
           }
         }
       },
-      "NewTools": {
+      "NewAuthors": {
         "properties": {
           "name": {
             "type": "string"
-          },
-          "plugins": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           }
         }
       }
@@ -602,7 +584,7 @@
   },
   "tags": [
     {
-      "name": "Tools"
+      "name": "Authors"
     }
   ]
 }

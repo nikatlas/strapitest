@@ -32,9 +32,6 @@
       "via": "plugins",
       "dominant": true
     },
-    "author": {
-      "type": "string"
-    },
     "icon": {
       "model": "file",
       "via": "related",
@@ -55,6 +52,9 @@
     },
     "links": {
       "collection": "links"
+    },
+    "author": {
+      "model": "authors"
     }
   }
 }

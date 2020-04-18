@@ -627,9 +627,6 @@
               }
             }
           },
-          "author": {
-            "type": "string"
-          },
           "icon": {
             "required": [
               "id",
@@ -708,9 +705,6 @@
                   "type": "string"
                 }
               },
-              "author": {
-                "type": "string"
-              },
               "icon": {
                 "type": "string"
               },
@@ -727,6 +721,9 @@
                 "type": "string"
               },
               "links": {
+                "type": "string"
+              },
+              "author": {
                 "type": "string"
               }
             }
@@ -755,6 +752,22 @@
                 "type": "string"
               }
             }
+          },
+          "author": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "icon": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -778,9 +791,6 @@
               "type": "string"
             }
           },
-          "author": {
-            "type": "string"
-          },
           "similars": {
             "type": "string"
           },
@@ -794,6 +804,9 @@
             "type": "string"
           },
           "links": {
+            "type": "string"
+          },
+          "author": {
             "type": "string"
           }
         }
