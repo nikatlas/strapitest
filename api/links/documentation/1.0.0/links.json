@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/tools": {
+    "/links": {
       "get": {
         "deprecated": false,
-        "description": "Find all the tools's records",
+        "description": "Find all the links's records",
         "responses": {
           "200": {
-            "description": "Retrieve tools document(s)",
+            "description": "Retrieve links document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Tools"
+                    "$ref": "#/components/schemas/Links"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Tools"
+          "Links"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new tools record",
+        "description": "Create a new links record",
         "responses": {
           "200": {
-            "description": "Retrieve tools document(s)",
+            "description": "Retrieve links document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tools"
+                  "$ref": "#/components/schemas/Links"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Tools"
+          "Links"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTools"
+                "$ref": "#/components/schemas/NewLinks"
               }
             }
           }
         }
       }
     },
-    "/tools/count": {
+    "/links/count": {
       "get": {
         "deprecated": false,
-        "description": "Retrieve the numver of tools documents",
+        "description": "Retrieve the numver of links documents",
         "responses": {
           "200": {
-            "description": "Retrieve tools document(s)",
+            "description": "Retrieve links document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Tools"
+          "Links"
         ],
         "parameters": []
       }
     },
-    "/tools/{id}": {
+    "/links/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one tools record",
+        "description": "Find one links record",
         "responses": {
           "200": {
-            "description": "Retrieve tools document(s)",
+            "description": "Retrieve links document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tools"
+                  "$ref": "#/components/schemas/Links"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Tools"
+          "Links"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single tools record",
+        "description": "Update a single links record",
         "responses": {
           "200": {
-            "description": "Retrieve tools document(s)",
+            "description": "Retrieve links document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tools"
+                  "$ref": "#/components/schemas/Links"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Tools"
+          "Links"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewTools"
+                "$ref": "#/components/schemas/NewLinks"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single tools record",
+        "description": "Delete a single links record",
         "responses": {
           "200": {
-            "description": "deletes a single tools based on the ID supplied",
+            "description": "deletes a single links based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Tools"
+          "Links"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Tools": {
+      "Links": {
         "required": [
           "id"
         ],
@@ -522,62 +522,23 @@
           "id": {
             "type": "string"
           },
-          "name": {
+          "link": {
             "type": "string"
           },
-          "plugins": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "images": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "tools": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "author": {
-                  "type": "string"
-                },
-                "icon": {
-                  "type": "string"
-                },
-                "similars": {
-                  "type": "string"
-                },
-                "stars": {
-                  "type": "integer"
-                },
-                "last_update": {
-                  "type": "string"
-                },
-                "short_description": {
-                  "type": "string"
-                },
-                "links": {
+          "tool": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "plugins": {
+                "type": "array",
+                "items": {
                   "type": "string"
                 }
               }
@@ -585,16 +546,13 @@
           }
         }
       },
-      "NewTools": {
+      "NewLinks": {
         "properties": {
-          "name": {
+          "link": {
             "type": "string"
           },
-          "plugins": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "tool": {
+            "type": "string"
           }
         }
       }
@@ -602,7 +560,7 @@
   },
   "tags": [
     {
-      "name": "Tools"
+      "name": "Links"
     }
   ]
 }

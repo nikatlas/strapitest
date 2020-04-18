@@ -544,9 +544,6 @@
                 "description": {
                   "type": "string"
                 },
-                "link": {
-                  "type": "string"
-                },
                 "images": {
                   "type": "array",
                   "items": {
@@ -578,6 +575,12 @@
                   "type": "integer"
                 },
                 "last_update": {
+                  "type": "string"
+                },
+                "short_description": {
+                  "type": "string"
+                },
+                "links": {
                   "type": "string"
                 }
               }

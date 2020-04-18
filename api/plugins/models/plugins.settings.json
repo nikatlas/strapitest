@@ -16,9 +16,6 @@
     "description": {
       "type": "richtext"
     },
-    "link": {
-      "type": "string"
-    },
     "images": {
       "collection": "file",
       "via": "related",
@@ -26,8 +23,8 @@
       "required": false
     },
     "categories": {
-      "via": "plugins",
       "collection": "categories",
+      "via": "plugins",
       "dominant": true
     },
     "tools": {
@@ -52,6 +49,12 @@
     },
     "last_update": {
       "type": "date"
+    },
+    "short_description": {
+      "type": "string"
+    },
+    "links": {
+      "collection": "links"
     }
   }
 }

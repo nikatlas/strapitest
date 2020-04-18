@@ -17,8 +17,8 @@
       "type": "string"
     },
     "plugins": {
-      "collection": "plugins",
-      "via": "categories"
+      "via": "categories",
+      "collection": "plugins"
     },
     "parent": {
       "model": "categories"

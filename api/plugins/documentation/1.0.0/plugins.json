@@ -528,9 +528,6 @@
           "description": {
             "type": "string"
           },
-          "link": {
-            "type": "string"
-          },
           "images": {
             "type": "array",
             "items": {
@@ -693,9 +690,6 @@
               "description": {
                 "type": "string"
               },
-              "link": {
-                "type": "string"
-              },
               "images": {
                 "type": "array",
                 "items": {
@@ -728,6 +722,12 @@
               },
               "last_update": {
                 "type": "string"
+              },
+              "short_description": {
+                "type": "string"
+              },
+              "links": {
+                "type": "string"
               }
             }
           },
@@ -736,6 +736,25 @@
           },
           "last_update": {
             "type": "string"
+          },
+          "short_description": {
+            "type": "string"
+          },
+          "links": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "link": {
+                "type": "string"
+              },
+              "tool": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -745,9 +764,6 @@
             "type": "string"
           },
           "description": {
-            "type": "string"
-          },
-          "link": {
             "type": "string"
           },
           "categories": {
@@ -772,6 +788,12 @@
             "type": "integer"
           },
           "last_update": {
+            "type": "string"
+          },
+          "short_description": {
+            "type": "string"
+          },
+          "links": {
             "type": "string"
           }
         }
