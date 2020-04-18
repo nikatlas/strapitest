@@ -12,10 +12,6 @@
   "attributes": {
     "name": {
       "type": "string"
-    },
-    "plugins": {
-      "via": "tools",
-      "collection": "plugins"
     }
   }
 }

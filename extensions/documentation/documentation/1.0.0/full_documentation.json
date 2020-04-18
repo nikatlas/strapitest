@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/18/2020 4:37:56 PM"
+    "x-generation-date": "04/18/2020 8:04:28 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5377,12 +5377,6 @@
                     "type": "string"
                   }
                 },
-                "tools": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "icon": {
                   "type": "string"
                 },
@@ -5474,12 +5468,6 @@
               },
               "name": {
                 "type": "string"
-              },
-              "plugins": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               }
             }
           }
@@ -5586,28 +5574,6 @@
               }
             }
           },
-          "tools": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "plugins": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
           "icon": {
             "required": [
               "id",
@@ -5675,12 +5641,6 @@
                 }
               },
               "categories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "tools": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -5766,12 +5726,6 @@
               "type": "string"
             }
           },
-          "tools": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
           "similars": {
             "type": "string"
           },
@@ -5828,64 +5782,6 @@
           },
           "name": {
             "type": "string"
-          },
-          "plugins": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "images": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "tools": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "icon": {
-                  "type": "string"
-                },
-                "similars": {
-                  "type": "string"
-                },
-                "stars": {
-                  "type": "integer"
-                },
-                "last_update": {
-                  "type": "string"
-                },
-                "short_description": {
-                  "type": "string"
-                },
-                "links": {
-                  "type": "string"
-                },
-                "author": {
-                  "type": "string"
-                }
-              }
-            }
           }
         }
       },
@@ -5893,12 +5789,6 @@
         "properties": {
           "name": {
             "type": "string"
-          },
-          "plugins": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           }
         }
       },

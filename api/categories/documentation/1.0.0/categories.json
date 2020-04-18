@@ -556,12 +556,6 @@
                     "type": "string"
                   }
                 },
-                "tools": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
                 "icon": {
                   "type": "string"
                 },

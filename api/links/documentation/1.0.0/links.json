@@ -535,12 +535,6 @@
               },
               "name": {
                 "type": "string"
-              },
-              "plugins": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               }
             }
           }

@@ -27,11 +27,6 @@
       "via": "plugins",
       "dominant": true
     },
-    "tools": {
-      "collection": "tools",
-      "via": "plugins",
-      "dominant": true
-    },
     "icon": {
       "model": "file",
       "via": "related",

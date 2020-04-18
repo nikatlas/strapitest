@@ -605,28 +605,6 @@
               }
             }
           },
-          "tools": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "plugins": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
-              }
-            }
-          },
           "icon": {
             "required": [
               "id",
@@ -694,12 +672,6 @@
                 }
               },
               "categories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "tools": {
                 "type": "array",
                 "items": {
                   "type": "string"
@@ -780,12 +752,6 @@
             "type": "string"
           },
           "categories": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "tools": {
             "type": "array",
             "items": {
               "type": "string"
