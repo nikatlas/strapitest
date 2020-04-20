@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/18/2020 8:04:28 PM"
+    "x-generation-date": "04/20/2020 2:35:02 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -2087,6 +2087,63 @@
             }
           }
         ]
+      }
+    },
+    "/plugins/doubles": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Unclassified"
+        ],
+        "parameters": []
       }
     },
     "/tests": {
@@ -5397,6 +5454,9 @@
                 },
                 "author": {
                   "type": "string"
+                },
+                "tools": {
+                  "type": "string"
                 }
               }
             }
@@ -5666,6 +5726,9 @@
               },
               "author": {
                 "type": "string"
+              },
+              "tools": {
+                "type": "string"
               }
             }
           },
@@ -5709,6 +5772,19 @@
                 "type": "string"
               }
             }
+          },
+          "tools": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -5742,6 +5818,9 @@
             "type": "string"
           },
           "author": {
+            "type": "string"
+          },
+          "tools": {
             "type": "string"
           }
         }
@@ -6052,6 +6131,9 @@
     },
     {
       "name": "Plugins"
+    },
+    {
+      "name": "Unclassified"
     },
     {
       "name": "Test"

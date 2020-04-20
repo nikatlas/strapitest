@@ -50,6 +50,9 @@
     },
     "author": {
       "model": "authors"
+    },
+    "tools": {
+      "collection": "tools"
     }
   }
 }

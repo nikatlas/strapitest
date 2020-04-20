@@ -576,6 +576,9 @@
                 },
                 "author": {
                   "type": "string"
+                },
+                "tools": {
+                  "type": "string"
                 }
               }
             }

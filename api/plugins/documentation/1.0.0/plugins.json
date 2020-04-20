@@ -697,6 +697,9 @@
               },
               "author": {
                 "type": "string"
+              },
+              "tools": {
+                "type": "string"
               }
             }
           },
@@ -740,6 +743,19 @@
                 "type": "string"
               }
             }
+          },
+          "tools": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -773,6 +789,9 @@
             "type": "string"
           },
           "author": {
+            "type": "string"
+          },
+          "tools": {
             "type": "string"
           }
         }
