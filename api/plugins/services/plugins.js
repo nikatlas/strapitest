@@ -39,9 +39,9 @@ module.exports = {
 	      })
 	      .get({ key: 'provider' }); 
 	    let counter = 0;
-	    let set = new Set();
+	    const set = new Set();
 	    const count = await strapi.services.plugins.traverseImages(async(image) => {
-	    		if(set.has(image.sha256)) {
+	    		if(image && image.sha256 && set.has(image.sha256)) {
 	    			await strapi.plugins.upload.services.upload.remove(image, config);
 	    			counter++;
 	    		} else {
