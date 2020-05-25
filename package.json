@@ -7,11 +7,12 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "develop": "strapi develop",
     "strapi": "strapi"
   },
   "devDependencies": {},
   "dependencies": {
+    "csv-parse": "^4.10.1",
+    "json-2-csv": "^3.7.0",
     "knex": "<0.20.0",
     "sqlite3": "latest",
     "strapi": "v3.0.0-beta.20.1",
