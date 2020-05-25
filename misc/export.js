@@ -17,7 +17,8 @@ async function fetchData(data) {
       name,
       description,
       short_description,
-      categories
+      categories,
+      similars
     } = item;
 
 
@@ -26,7 +27,8 @@ async function fetchData(data) {
       name,
       description,
       short_description,
-      categories: categories.map((cat) => cat.name).join('/')
+      categories: categories.map((cat) => cat.name).join('/'),
+      similars: similars.map((cat) => cat.name).join('/')
     }
   });
   return converter.json2csvAsync(data).then((csv) => {
@@ -49,7 +51,7 @@ async function getData() {
   let data = [];
   const perPage = 100;
   for (let i = 0; i < count;) {
-    let res = await strapi.query('plugins').find({_limit: perPage, _start: i}, ['categories', 'categories.name']);
+    let res = await strapi.query('plugins').find({_limit: perPage, _start: i}, ['categories', 'categories.name', 'similars', 'similars.name']);
     data = data.concat(res);
     if (i==data.length) 
       break;
