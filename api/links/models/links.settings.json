@@ -15,6 +15,10 @@
     },
     "tool": {
       "model": "tools"
+    },
+    "plugin": {
+      "via": "links",
+      "model": "plugins"
     }
   }
 }

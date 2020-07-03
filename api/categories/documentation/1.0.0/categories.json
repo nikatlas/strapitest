@@ -560,6 +560,12 @@
                   "type": "string"
                 },
                 "similars": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "plugin": {
                   "type": "string"
                 },
                 "stars": {
@@ -572,13 +578,19 @@
                   "type": "string"
                 },
                 "links": {
-                  "type": "string"
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "author": {
                   "type": "string"
                 },
                 "tools": {
-                  "type": "string"
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 }
               }
             }

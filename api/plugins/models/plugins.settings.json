@@ -34,7 +34,12 @@
       "required": false
     },
     "similars": {
-      "collection": "plugins"
+      "collection": "plugins",
+      "via": "plugin"
+    },
+    "plugin": {
+      "model": "plugins",
+      "via": "similars"
     },
     "stars": {
       "type": "integer"
@@ -46,13 +51,15 @@
       "type": "string"
     },
     "links": {
-      "collection": "links"
+      "collection": "links",
+      "via": "plugin"
     },
     "author": {
       "model": "authors"
     },
     "tools": {
-      "collection": "tools"
+      "collection": "tools",
+      "via": "plugin"
     }
   }
 }

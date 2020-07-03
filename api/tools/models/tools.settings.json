@@ -18,6 +18,10 @@
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "plugin": {
+      "via": "tools",
+      "model": "plugins"
     }
   }
 }

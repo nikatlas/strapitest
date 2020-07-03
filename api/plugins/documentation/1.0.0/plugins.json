@@ -682,6 +682,73 @@
             }
           },
           "similars": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "categories": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "icon": {
+                  "type": "string"
+                },
+                "similars": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "plugin": {
+                  "type": "string"
+                },
+                "stars": {
+                  "type": "integer"
+                },
+                "last_update": {
+                  "type": "string"
+                },
+                "short_description": {
+                  "type": "string"
+                },
+                "links": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "author": {
+                  "type": "string"
+                },
+                "tools": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          },
+          "plugin": {
             "required": [
               "id"
             ],
@@ -711,6 +778,12 @@
                 "type": "string"
               },
               "similars": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "plugin": {
                 "type": "string"
               },
               "stars": {
@@ -723,13 +796,19 @@
                 "type": "string"
               },
               "links": {
-                "type": "string"
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "author": {
                 "type": "string"
               },
               "tools": {
-                "type": "string"
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -743,18 +822,24 @@
             "type": "string"
           },
           "links": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "link": {
-                "type": "string"
-              },
-              "tool": {
-                "type": "string"
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "link": {
+                  "type": "string"
+                },
+                "tool": {
+                  "type": "string"
+                },
+                "plugin": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -775,18 +860,24 @@
             }
           },
           "tools": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "icon": {
-                "type": "string"
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "icon": {
+                  "type": "string"
+                },
+                "plugin": {
+                  "type": "string"
+                }
               }
             }
           }
@@ -807,6 +898,12 @@
             }
           },
           "similars": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "plugin": {
             "type": "string"
           },
           "stars": {
@@ -819,13 +916,19 @@
             "type": "string"
           },
           "links": {
-            "type": "string"
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "author": {
             "type": "string"
           },
           "tools": {
-            "type": "string"
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       }
