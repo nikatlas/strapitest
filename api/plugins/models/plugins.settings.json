@@ -50,8 +50,7 @@
       "model": "authors"
     },
     "tools": {
-      "collection": "tools",
-      "via": "plugin"
+      "collection": "tools"
     },
     "similars": {
       "collection": "plugins"

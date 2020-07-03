@@ -578,10 +578,7 @@
                   "type": "string"
                 },
                 "tools": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                  "type": "string"
                 },
                 "similars": {
                   "type": "string"
