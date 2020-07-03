@@ -33,14 +33,6 @@
       "plugin": "upload",
       "required": false
     },
-    "similars": {
-      "collection": "plugins",
-      "via": "plugin"
-    },
-    "plugin": {
-      "model": "plugins",
-      "via": "similars"
-    },
     "stars": {
       "type": "integer"
     },
@@ -60,6 +52,9 @@
     "tools": {
       "collection": "tools",
       "via": "plugin"
+    },
+    "similars": {
+      "collection": "plugins"
     }
   }
 }

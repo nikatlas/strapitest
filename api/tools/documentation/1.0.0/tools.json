@@ -615,15 +615,6 @@
               "icon": {
                 "type": "string"
               },
-              "similars": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "plugin": {
-                "type": "string"
-              },
               "stars": {
                 "type": "integer"
               },
@@ -647,6 +638,9 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "similars": {
+                "type": "string"
               }
             }
           }
