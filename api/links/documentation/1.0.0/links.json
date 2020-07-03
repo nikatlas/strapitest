@@ -538,6 +538,12 @@
               },
               "icon": {
                 "type": "string"
+              },
+              "plugins": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -589,7 +595,10 @@
                 "type": "string"
               },
               "tools": {
-                "type": "string"
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "similars": {
                 "type": "string"

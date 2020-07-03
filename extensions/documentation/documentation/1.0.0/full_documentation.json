@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/03/2020 4:54:47 PM"
+    "x-generation-date": "07/03/2020 5:11:54 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5471,7 +5471,10 @@
                   "type": "string"
                 },
                 "tools": {
-                  "type": "string"
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "similars": {
                   "type": "string"
@@ -5549,6 +5552,12 @@
               },
               "icon": {
                 "type": "string"
+              },
+              "plugins": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -5600,7 +5609,10 @@
                 "type": "string"
               },
               "tools": {
-                "type": "string"
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "similars": {
                 "type": "string"
@@ -5837,18 +5849,27 @@
             }
           },
           "tools": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "icon": {
-                "type": "string"
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "icon": {
+                  "type": "string"
+                },
+                "plugins": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
               }
             }
           },
@@ -5900,7 +5921,10 @@
                 "type": "string"
               },
               "tools": {
-                "type": "string"
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "similars": {
                 "type": "string"
@@ -5942,7 +5966,10 @@
             "type": "string"
           },
           "tools": {
-            "type": "string"
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "similars": {
             "type": "string"
@@ -6046,6 +6073,67 @@
                 "type": "string"
               }
             }
+          },
+          "plugins": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "images": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "categories": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "icon": {
+                  "type": "string"
+                },
+                "stars": {
+                  "type": "integer"
+                },
+                "last_update": {
+                  "type": "string"
+                },
+                "short_description": {
+                  "type": "string"
+                },
+                "links": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "author": {
+                  "type": "string"
+                },
+                "tools": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "similars": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -6053,6 +6141,12 @@
         "properties": {
           "name": {
             "type": "string"
+          },
+          "plugins": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           }
         }
       },
