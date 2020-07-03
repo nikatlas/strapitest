@@ -16,17 +16,17 @@
     "json-2-csv": "^3.7.0",
     "knex": "<0.20.0",
     "sqlite3": "latest",
-    "strapi": "v3.0.0-beta.20.1",
-    "strapi-admin": "v3.0.0-beta.20.1",
-    "strapi-connector-bookshelf": "v3.0.0-beta.20.1",
-    "strapi-plugin-content-manager": "v3.0.0-beta.20.1",
-    "strapi-plugin-content-type-builder": "v3.0.0-beta.20.1",
-    "strapi-plugin-documentation": "v3.0.0-beta.20.1",
-    "strapi-plugin-email": "v3.0.0-beta.20.1",
-    "strapi-plugin-graphql": "v3.0.0-beta.20.1",
-    "strapi-plugin-upload": "v3.0.0-beta.20.1",
-    "strapi-plugin-users-permissions": "v3.0.0-beta.20.1",
-    "strapi-utils": "v3.0.0-beta.20.1"
+    "strapi": "v3.0.5",
+    "strapi-admin": "v3.0.5",
+    "strapi-connector-bookshelf": "v3.0.5",
+    "strapi-plugin-content-manager": "v3.0.5",
+    "strapi-plugin-content-type-builder": "v3.0.5",
+    "strapi-plugin-documentation": "v3.0.5",
+    "strapi-plugin-email": "v3.0.5",
+    "strapi-plugin-graphql": "v3.0.5",
+    "strapi-plugin-upload": "v3.0.5",
+    "strapi-plugin-users-permissions": "v3.0.5",
+    "strapi-utils": "v3.0.5"
   },
   "author": {
     "name": "A Strapi developer"
