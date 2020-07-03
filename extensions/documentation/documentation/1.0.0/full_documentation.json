@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "04/20/2020 2:35:02 PM"
+    "x-generation-date": "07/03/2020 2:23:11 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5354,10 +5354,22 @@
               "name": {
                 "type": "string"
               },
-              "hash": {
+              "alternativeText": {
                 "type": "string"
               },
-              "sha256": {
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
                 "type": "string"
               },
               "ext": {
@@ -5370,6 +5382,9 @@
                 "type": "number"
               },
               "url": {
+                "type": "string"
+              },
+              "previewUrl": {
                 "type": "string"
               },
               "provider": {
@@ -5528,6 +5543,9 @@
               },
               "name": {
                 "type": "string"
+              },
+              "icon": {
+                "type": "string"
               }
             }
           }
@@ -5576,10 +5594,22 @@
                 "name": {
                   "type": "string"
                 },
-                "hash": {
+                "alternativeText": {
                   "type": "string"
                 },
-                "sha256": {
+                "caption": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {
+                  "type": "object"
+                },
+                "hash": {
                   "type": "string"
                 },
                 "ext": {
@@ -5592,6 +5622,9 @@
                   "type": "number"
                 },
                 "url": {
+                  "type": "string"
+                },
+                "previewUrl": {
                   "type": "string"
                 },
                 "provider": {
@@ -5651,10 +5684,22 @@
               "name": {
                 "type": "string"
               },
-              "hash": {
+              "alternativeText": {
                 "type": "string"
               },
-              "sha256": {
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
                 "type": "string"
               },
               "ext": {
@@ -5667,6 +5712,9 @@
                 "type": "number"
               },
               "url": {
+                "type": "string"
+              },
+              "previewUrl": {
                 "type": "string"
               },
               "provider": {
@@ -5783,6 +5831,9 @@
               },
               "name": {
                 "type": "string"
+              },
+              "icon": {
+                "type": "string"
               }
             }
           }
@@ -5861,6 +5912,67 @@
           },
           "name": {
             "type": "string"
+          },
+          "icon": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              }
+            }
           }
         }
       },

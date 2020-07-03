@@ -535,6 +535,9 @@
               },
               "name": {
                 "type": "string"
+              },
+              "icon": {
+                "type": "string"
               }
             }
           }

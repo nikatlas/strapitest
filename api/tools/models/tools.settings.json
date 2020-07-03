@@ -12,6 +12,12 @@
   "attributes": {
     "name": {
       "type": "string"
+    },
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
     }
   }
 }
