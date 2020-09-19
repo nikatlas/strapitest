@@ -43,16 +43,13 @@
       "type": "string"
     },
     "links": {
-      "collection": "links",
-      "via": "plugin"
+      "collection": "links"
     },
     "author": {
       "model": "authors"
     },
     "tools": {
-      "collection": "tools",
-      "via": "plugins",
-      "dominant": true
+      "collection": "tools"
     },
     "similars": {
       "collection": "plugins"

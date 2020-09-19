@@ -538,70 +538,6 @@
               },
               "icon": {
                 "type": "string"
-              },
-              "plugins": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "plugin": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "images": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "categories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "icon": {
-                "type": "string"
-              },
-              "stars": {
-                "type": "integer"
-              },
-              "last_update": {
-                "type": "string"
-              },
-              "short_description": {
-                "type": "string"
-              },
-              "links": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "author": {
-                "type": "string"
-              },
-              "tools": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "similars": {
-                "type": "string"
               }
             }
           }
@@ -613,9 +549,6 @@
             "type": "string"
           },
           "tool": {
-            "type": "string"
-          },
-          "plugin": {
             "type": "string"
           }
         }

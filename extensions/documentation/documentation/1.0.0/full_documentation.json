@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/19/2020 3:58:05 PM"
+    "x-generation-date": "09/19/2020 5:37:12 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5968,19 +5968,13 @@
                 "type": "string"
               },
               "links": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+                "type": "string"
               },
               "author": {
                 "type": "string"
               },
               "tools": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+                "type": "string"
               },
               "similars": {
                 "type": "string"
@@ -6003,12 +5997,6 @@
               },
               "icon": {
                 "type": "string"
-              },
-              "plugins": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               }
             }
           }
@@ -6085,19 +6073,13 @@
                   "type": "string"
                 },
                 "links": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                  "type": "string"
                 },
                 "author": {
                   "type": "string"
                 },
                 "tools": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                  "type": "string"
                 },
                 "similars": {
                   "type": "string"
@@ -6175,70 +6157,6 @@
               },
               "icon": {
                 "type": "string"
-              },
-              "plugins": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "plugin": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "description": {
-                "type": "string"
-              },
-              "images": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "categories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "icon": {
-                "type": "string"
-              },
-              "stars": {
-                "type": "integer"
-              },
-              "last_update": {
-                "type": "string"
-              },
-              "short_description": {
-                "type": "string"
-              },
-              "links": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "author": {
-                "type": "string"
-              },
-              "tools": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "similars": {
-                "type": "string"
               }
             }
           }
@@ -6250,9 +6168,6 @@
             "type": "string"
           },
           "tool": {
-            "type": "string"
-          },
-          "plugin": {
             "type": "string"
           }
         }
@@ -6434,24 +6349,18 @@
             "type": "string"
           },
           "links": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "link": {
-                  "type": "string"
-                },
-                "tool": {
-                  "type": "string"
-                },
-                "plugin": {
-                  "type": "string"
-                }
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "link": {
+                "type": "string"
+              },
+              "tool": {
+                "type": "string"
               }
             }
           },
@@ -6472,27 +6381,18 @@
             }
           },
           "tools": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "icon": {
-                  "type": "string"
-                },
-                "plugins": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                }
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "icon": {
+                "type": "string"
               }
             }
           },
@@ -6535,19 +6435,13 @@
                 "type": "string"
               },
               "links": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+                "type": "string"
               },
               "author": {
                 "type": "string"
               },
               "tools": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+                "type": "string"
               },
               "similars": {
                 "type": "string"
@@ -6580,19 +6474,13 @@
             "type": "string"
           },
           "links": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+            "type": "string"
           },
           "author": {
             "type": "string"
           },
           "tools": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+            "type": "string"
           },
           "similars": {
             "type": "string"
@@ -6696,67 +6584,6 @@
                 "type": "string"
               }
             }
-          },
-          "plugins": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "images": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "categories": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "icon": {
-                  "type": "string"
-                },
-                "stars": {
-                  "type": "integer"
-                },
-                "last_update": {
-                  "type": "string"
-                },
-                "short_description": {
-                  "type": "string"
-                },
-                "links": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "author": {
-                  "type": "string"
-                },
-                "tools": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "similars": {
-                  "type": "string"
-                }
-              }
-            }
           }
         }
       },
@@ -6764,12 +6591,6 @@
         "properties": {
           "name": {
             "type": "string"
-          },
-          "plugins": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           }
         }
       },

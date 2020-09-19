@@ -564,19 +564,13 @@
                 "type": "string"
               },
               "links": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+                "type": "string"
               },
               "author": {
                 "type": "string"
               },
               "tools": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
+                "type": "string"
               },
               "similars": {
                 "type": "string"
@@ -599,12 +593,6 @@
               },
               "icon": {
                 "type": "string"
-              },
-              "plugins": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
               }
             }
           }
