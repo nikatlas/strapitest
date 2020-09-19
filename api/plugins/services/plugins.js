@@ -9,15 +9,16 @@ const fs = require('fs');
 
 module.exports = {
 	checkFields: async (plugin) => {
-		if (!fs.existsSync(__dirname + "/../../../public/uploads/.gitkeep")) {
-			console.log("NO file -> " , __dirname + "/../../../public/uploads/.gitkeep");
-			return
+		if (!fs.existsSync(process.cwd() + "/public/uploads/.gitkeep")) {
+			console.log("NO file -> " , process.cwd() + "/public/uploads/.gitkeep");
+			return;
 		}
+
 		let counter = 0;
 		let total = 0;
 		for(let i in plugin.images) {
 			const img = plugin.images[i].url;
-			const path = __dirname + "../../../public"+img;
+			const path = process.cwd() + "/public"+img;
 			if (!fs.existsSync(path)) {
 				await strapi.services.plugins.deleteImage(plugin.images[i]);
 				counter++;
