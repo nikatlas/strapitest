@@ -15,6 +15,7 @@
     "csv-parse": "^4.10.1",
     "json-2-csv": "^3.7.0",
     "knex": "<0.20.0",
+    "node-fetch": "^2.6.1",
     "sqlite3": "latest",
     "strapi": "v3.0.5",
     "strapi-admin": "v3.0.5",

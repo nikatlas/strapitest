@@ -18,6 +18,14 @@
     },
     {
       "method": "GET",
+      "path": "/plugins/missing",
+      "handler": "functions.findMissing",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/plugins/count",
       "handler": "plugins.count",
       "config": {
