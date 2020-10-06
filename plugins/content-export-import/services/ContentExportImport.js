@@ -15,14 +15,12 @@ module.exports = {
     try {
       if (kind === 'collectionType' && Array.isArray(source)) {
         for (let i = 0; i < source.length; i++) {
-          //await uitls.importItemByContentType(targetModel, source[i])
-          await uitls.importSingleType(targetModel, source[i])
+          await uitls.importItemByContentType(targetModel, source[i])
         }
       } else {
         await uitls.importSingleType(targetModel, source);
       }
     } catch (e) {
-      console.log(e);
       ctx.throw(409, e.message);
     }
   },

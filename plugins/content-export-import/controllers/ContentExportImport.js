@@ -25,13 +25,8 @@ module.exports = {
       ctx.throw(400, validationResult);
       return;
     }
-    let count = 0;
-    let temp = -1;
-    do {
-      temp = await importService.deleteAllData(
+    const count = await importService.deleteAllData(
       ctx.request.body.targetModelUid, ctx);
-      count += temp;
-    } while(temp > 0);
     ctx.send({
       message: 'ok',
       count,
