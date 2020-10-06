@@ -516,7 +516,8 @@
     "schemas": {
       "Test": {
         "required": [
-          "id"
+          "id",
+          "code"
         ],
         "properties": {
           "id": {
@@ -527,16 +528,25 @@
           },
           "description": {
             "type": "string"
+          },
+          "code": {
+            "type": "integer"
           }
         }
       },
       "NewTest": {
+        "required": [
+          "code"
+        ],
         "properties": {
           "name": {
             "type": "string"
           },
           "description": {
             "type": "string"
+          },
+          "code": {
+            "type": "integer"
           }
         }
       }
