@@ -18,6 +18,9 @@
       "via": "related",
       "plugin": "upload",
       "required": false
+    },
+    "code": {
+      "type": "integer"
     }
   }
 }

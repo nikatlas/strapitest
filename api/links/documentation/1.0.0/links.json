@@ -538,8 +538,14 @@
               },
               "icon": {
                 "type": "string"
+              },
+              "code": {
+                "type": "integer"
               }
             }
+          },
+          "code": {
+            "type": "integer"
           }
         }
       },
@@ -550,6 +556,9 @@
           },
           "tool": {
             "type": "string"
+          },
+          "code": {
+            "type": "integer"
           }
         }
       }

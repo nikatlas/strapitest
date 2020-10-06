@@ -22,6 +22,9 @@
     },
     "parent": {
       "model": "categories"
+    },
+    "code": {
+      "type": "integer"
     }
   }
 }

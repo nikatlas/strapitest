@@ -616,6 +616,9 @@
                 },
                 "parent": {
                   "type": "string"
+                },
+                "code": {
+                  "type": "integer"
                 }
               }
             }
@@ -703,6 +706,9 @@
               },
               "tool": {
                 "type": "string"
+              },
+              "code": {
+                "type": "integer"
               }
             }
           },
@@ -719,6 +725,9 @@
               },
               "icon": {
                 "type": "string"
+              },
+              "code": {
+                "type": "integer"
               }
             }
           },
@@ -735,6 +744,9 @@
               },
               "icon": {
                 "type": "string"
+              },
+              "code": {
+                "type": "integer"
               }
             }
           },
@@ -787,8 +799,14 @@
               },
               "similars": {
                 "type": "string"
+              },
+              "code": {
+                "type": "integer"
               }
             }
+          },
+          "code": {
+            "type": "integer"
           }
         }
       },
@@ -826,6 +844,9 @@
           },
           "similars": {
             "type": "string"
+          },
+          "code": {
+            "type": "integer"
           }
         }
       }

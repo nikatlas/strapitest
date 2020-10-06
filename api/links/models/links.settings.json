@@ -15,6 +15,9 @@
     },
     "tool": {
       "model": "tools"
+    },
+    "code": {
+      "type": "integer"
     }
   }
 }

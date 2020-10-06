@@ -20,6 +20,9 @@
     },
     "tools": {
       "collection": "tools"
+    },
+    "code": {
+      "type": "integer"
     }
   }
 }

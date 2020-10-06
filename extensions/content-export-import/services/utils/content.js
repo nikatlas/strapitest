@@ -4,7 +4,6 @@ const importItemByContentType = (id, item) => {
 
 const importSingleType = async (uid, item) => {
   const existing = await strapi.query(uid).find({ code: item.id });
-  console.log("Ε", uid, existing, item);
   if (existing.length > 0) {
     return strapi.query(uid).update({
       code: existing[0].code,

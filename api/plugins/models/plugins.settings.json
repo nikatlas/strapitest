@@ -53,6 +53,9 @@
     },
     "similars": {
       "collection": "plugins"
+    },
+    "code": {
+      "type": "integer"
     }
   }
 }

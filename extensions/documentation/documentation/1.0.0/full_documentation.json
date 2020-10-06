@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/05/2020 8:03:11 PM"
+    "x-generation-date": "10/06/2020 4:28:43 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5965,6 +5965,9 @@
                 "type": "string"
               }
             }
+          },
+          "code": {
+            "type": "integer"
           }
         }
       },
@@ -5972,6 +5975,9 @@
         "properties": {
           "name": {
             "type": "string"
+          },
+          "code": {
+            "type": "integer"
           }
         }
       },
@@ -6035,6 +6041,9 @@
               },
               "similars": {
                 "type": "string"
+              },
+              "code": {
+                "type": "integer"
               }
             }
           },
@@ -6054,8 +6063,14 @@
               },
               "icon": {
                 "type": "string"
+              },
+              "code": {
+                "type": "integer"
               }
             }
+          },
+          "code": {
+            "type": "integer"
           }
         }
       },
@@ -6072,6 +6087,9 @@
           },
           "tools": {
             "type": "string"
+          },
+          "code": {
+            "type": "integer"
           }
         }
       },
@@ -6140,6 +6158,9 @@
                 },
                 "similars": {
                   "type": "string"
+                },
+                "code": {
+                  "type": "integer"
                 }
               }
             }
@@ -6166,8 +6187,14 @@
               },
               "parent": {
                 "type": "string"
+              },
+              "code": {
+                "type": "integer"
               }
             }
+          },
+          "code": {
+            "type": "integer"
           }
         }
       },
@@ -6187,6 +6214,9 @@
           },
           "parent": {
             "type": "string"
+          },
+          "code": {
+            "type": "integer"
           }
         }
       },
@@ -6214,8 +6244,14 @@
               },
               "icon": {
                 "type": "string"
+              },
+              "code": {
+                "type": "integer"
               }
             }
+          },
+          "code": {
+            "type": "integer"
           }
         }
       },
@@ -6226,6 +6262,9 @@
           },
           "tool": {
             "type": "string"
+          },
+          "code": {
+            "type": "integer"
           }
         }
       },
@@ -6331,6 +6370,9 @@
                 },
                 "parent": {
                   "type": "string"
+                },
+                "code": {
+                  "type": "integer"
                 }
               }
             }
@@ -6418,6 +6460,9 @@
               },
               "tool": {
                 "type": "string"
+              },
+              "code": {
+                "type": "integer"
               }
             }
           },
@@ -6434,6 +6479,9 @@
               },
               "icon": {
                 "type": "string"
+              },
+              "code": {
+                "type": "integer"
               }
             }
           },
@@ -6450,6 +6498,9 @@
               },
               "icon": {
                 "type": "string"
+              },
+              "code": {
+                "type": "integer"
               }
             }
           },
@@ -6502,8 +6553,14 @@
               },
               "similars": {
                 "type": "string"
+              },
+              "code": {
+                "type": "integer"
               }
             }
+          },
+          "code": {
+            "type": "integer"
           }
         }
       },
@@ -6541,6 +6598,9 @@
           },
           "similars": {
             "type": "string"
+          },
+          "code": {
+            "type": "integer"
           }
         }
       },
@@ -6651,6 +6711,9 @@
                 "type": "string"
               }
             }
+          },
+          "code": {
+            "type": "integer"
           }
         }
       },
@@ -6658,6 +6721,9 @@
         "properties": {
           "name": {
             "type": "string"
+          },
+          "code": {
+            "type": "integer"
           }
         }
       },
