@@ -19,7 +19,6 @@ export const fetchEntries = async (apiId, kind) => {
   let temp=[];
   do {
 	  temp = await request(url + '?_start=' + res.length, { method: 'GET' });
-	  console.log("TEMP:",temp);
 	  res = res.concat(temp);
   } while(temp.length > 0);
   return res;
