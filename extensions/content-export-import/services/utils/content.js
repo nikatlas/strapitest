@@ -3,13 +3,13 @@ const importItemByContentType = (id, item) => {
 };
 
 const importSingleType = async (uid, item) => {
-  const existing = await strapi.query(uid).find({ code: item.id });
+  const existing = await strapi.query(uid).find({ code: item.code });
   if (existing.length > 0) {
     return strapi.query(uid).update({
       code: existing[0].code,
     }, item)
   } else {
-    return strapi.query(uid).create({ ...item, code: item.id });
+    return strapi.query(uid).create({ ...item, code: item.code });
   }
 };
 
