@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/08/2020 2:30:16 PM"
+    "x-generation-date": "10/08/2020 4:24:03 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5914,9 +5914,6 @@
                 "type": "string"
               }
             }
-          },
-          "code": {
-            "type": "integer"
           }
         }
       },
@@ -5924,9 +5921,6 @@
         "properties": {
           "name": {
             "type": "string"
-          },
-          "code": {
-            "type": "integer"
           },
           "created_by": {
             "type": "string"
@@ -5997,9 +5991,6 @@
               "similars": {
                 "type": "string"
               },
-              "code": {
-                "type": "integer"
-              },
               "created_by": {
                 "type": "string"
               },
@@ -6025,9 +6016,6 @@
               "icon": {
                 "type": "string"
               },
-              "code": {
-                "type": "integer"
-              },
               "created_by": {
                 "type": "string"
               },
@@ -6035,9 +6023,6 @@
                 "type": "string"
               }
             }
-          },
-          "code": {
-            "type": "integer"
           }
         }
       },
@@ -6054,9 +6039,6 @@
           },
           "tools": {
             "type": "string"
-          },
-          "code": {
-            "type": "integer"
           },
           "created_by": {
             "type": "string"
@@ -6132,9 +6114,6 @@
                 "similars": {
                   "type": "string"
                 },
-                "code": {
-                  "type": "integer"
-                },
                 "created_by": {
                   "type": "string"
                 },
@@ -6167,9 +6146,6 @@
               "parent": {
                 "type": "string"
               },
-              "code": {
-                "type": "integer"
-              },
               "created_by": {
                 "type": "string"
               },
@@ -6177,9 +6153,6 @@
                 "type": "string"
               }
             }
-          },
-          "code": {
-            "type": "integer"
           }
         }
       },
@@ -6199,9 +6172,6 @@
           },
           "parent": {
             "type": "string"
-          },
-          "code": {
-            "type": "integer"
           },
           "created_by": {
             "type": "string"
@@ -6236,9 +6206,6 @@
               "icon": {
                 "type": "string"
               },
-              "code": {
-                "type": "integer"
-              },
               "created_by": {
                 "type": "string"
               },
@@ -6246,9 +6213,6 @@
                 "type": "string"
               }
             }
-          },
-          "code": {
-            "type": "integer"
           }
         }
       },
@@ -6259,9 +6223,6 @@
           },
           "tool": {
             "type": "string"
-          },
-          "code": {
-            "type": "integer"
           },
           "created_by": {
             "type": "string"
@@ -6380,9 +6341,6 @@
                 "parent": {
                   "type": "string"
                 },
-                "code": {
-                  "type": "integer"
-                },
                 "created_by": {
                   "type": "string"
                 },
@@ -6482,9 +6440,6 @@
               "tool": {
                 "type": "string"
               },
-              "code": {
-                "type": "integer"
-              },
               "created_by": {
                 "type": "string"
               },
@@ -6507,9 +6462,6 @@
               "icon": {
                 "type": "string"
               },
-              "code": {
-                "type": "integer"
-              },
               "created_by": {
                 "type": "string"
               },
@@ -6531,9 +6483,6 @@
               },
               "icon": {
                 "type": "string"
-              },
-              "code": {
-                "type": "integer"
               },
               "created_by": {
                 "type": "string"
@@ -6593,9 +6542,6 @@
               "similars": {
                 "type": "string"
               },
-              "code": {
-                "type": "integer"
-              },
               "created_by": {
                 "type": "string"
               },
@@ -6603,9 +6549,6 @@
                 "type": "string"
               }
             }
-          },
-          "code": {
-            "type": "integer"
           }
         }
       },
@@ -6644,9 +6587,6 @@
           "similars": {
             "type": "string"
           },
-          "code": {
-            "type": "integer"
-          },
           "created_by": {
             "type": "string"
           },
@@ -6657,8 +6597,7 @@
       },
       "Test": {
         "required": [
-          "id",
-          "code"
+          "id"
         ],
         "properties": {
           "id": {
@@ -6669,25 +6608,16 @@
           },
           "description": {
             "type": "string"
-          },
-          "code": {
-            "type": "integer"
           }
         }
       },
       "NewTest": {
-        "required": [
-          "code"
-        ],
         "properties": {
           "name": {
             "type": "string"
           },
           "description": {
             "type": "string"
-          },
-          "code": {
-            "type": "integer"
           },
           "created_by": {
             "type": "string"
@@ -6774,9 +6704,6 @@
                 "type": "string"
               }
             }
-          },
-          "code": {
-            "type": "integer"
           }
         }
       },
@@ -6784,9 +6711,6 @@
         "properties": {
           "name": {
             "type": "string"
-          },
-          "code": {
-            "type": "integer"
           },
           "created_by": {
             "type": "string"

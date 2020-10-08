@@ -3,11 +3,13 @@
   "connection": "default",
   "collectionName": "categories",
   "info": {
-    "name": "Categories"
+    "name": "Categories",
+    "description": ""
   },
   "options": {
     "increments": false,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
@@ -22,9 +24,6 @@
     },
     "parent": {
       "model": "categories"
-    },
-    "code": {
-      "type": "integer"
     }
   }
 }

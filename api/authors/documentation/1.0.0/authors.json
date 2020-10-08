@@ -591,9 +591,6 @@
                 "type": "string"
               }
             }
-          },
-          "code": {
-            "type": "integer"
           }
         }
       },
@@ -601,9 +598,6 @@
         "properties": {
           "name": {
             "type": "string"
-          },
-          "code": {
-            "type": "integer"
           },
           "created_by": {
             "type": "string"

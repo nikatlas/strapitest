@@ -3,11 +3,13 @@
   "connection": "default",
   "collectionName": "tools",
   "info": {
-    "name": "Tools"
+    "name": "Tools",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
@@ -18,9 +20,6 @@
       "via": "related",
       "plugin": "upload",
       "required": false
-    },
-    "code": {
-      "type": "integer"
     }
   }
 }

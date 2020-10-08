@@ -3,11 +3,13 @@
   "connection": "default",
   "collectionName": "plugins",
   "info": {
-    "name": "Plugins"
+    "name": "Plugins",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
@@ -53,9 +55,6 @@
     },
     "similars": {
       "collection": "plugins"
-    },
-    "code": {
-      "type": "integer"
     }
   }
 }

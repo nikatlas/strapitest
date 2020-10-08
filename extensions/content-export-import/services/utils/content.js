@@ -3,8 +3,13 @@ var Bookshelf = require('bookshelf').mysqlAuth;
 const filterModel = (model, item) => {
   let res = {};
   for(var i in model._attributes)
-    if(item[i])
-      res[i] = item[i];
+    if(item[i]){
+      if(model._attributes[i].type) {
+        res[i] = item[i];
+      } else if (model._attributes[i].collection) {
+        res[i] = JSON.parse(item[i]);
+      }
+    }
   return res;
 }
 const importItemByContentType = (id, item) => {
@@ -12,15 +17,17 @@ const importItemByContentType = (id, item) => {
 };
 
 const importSingleType = async (uid, item) => {
-  let { id, ...rest } = item;
+  const { id, ...rest } = item;
+  const model = strapi.query(uid).model;
+  const fitem = filterModel(model,rest);
+  
   const existing = await strapi.query(uid).find({ id: id });
+
   if (existing.length > 0) {
     return strapi.query(uid).update({
       id: existing[0].id
-    }, rest)
+    }, fitem)
   } else {
-    let model = strapi.query(uid).model;
-    let fitem = filterModel(model,rest);
     return model.forge({id}).save(fitem, {method: 'insert'});
     // return strapi.query(uid).create({__id:item.id, _id:item.id, ...item});
   }

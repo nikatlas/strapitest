@@ -539,9 +539,6 @@
               "icon": {
                 "type": "string"
               },
-              "code": {
-                "type": "integer"
-              },
               "created_by": {
                 "type": "string"
               },
@@ -549,9 +546,6 @@
                 "type": "string"
               }
             }
-          },
-          "code": {
-            "type": "integer"
           }
         }
       },
@@ -562,9 +556,6 @@
           },
           "tool": {
             "type": "string"
-          },
-          "code": {
-            "type": "integer"
           },
           "created_by": {
             "type": "string"

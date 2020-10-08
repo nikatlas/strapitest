@@ -623,9 +623,6 @@
                 "parent": {
                   "type": "string"
                 },
-                "code": {
-                  "type": "integer"
-                },
                 "created_by": {
                   "type": "string"
                 },
@@ -725,9 +722,6 @@
               "tool": {
                 "type": "string"
               },
-              "code": {
-                "type": "integer"
-              },
               "created_by": {
                 "type": "string"
               },
@@ -750,9 +744,6 @@
               "icon": {
                 "type": "string"
               },
-              "code": {
-                "type": "integer"
-              },
               "created_by": {
                 "type": "string"
               },
@@ -774,9 +765,6 @@
               },
               "icon": {
                 "type": "string"
-              },
-              "code": {
-                "type": "integer"
               },
               "created_by": {
                 "type": "string"
@@ -836,9 +824,6 @@
               "similars": {
                 "type": "string"
               },
-              "code": {
-                "type": "integer"
-              },
               "created_by": {
                 "type": "string"
               },
@@ -846,9 +831,6 @@
                 "type": "string"
               }
             }
-          },
-          "code": {
-            "type": "integer"
           }
         }
       },
@@ -886,9 +868,6 @@
           },
           "similars": {
             "type": "string"
-          },
-          "code": {
-            "type": "integer"
           },
           "created_by": {
             "type": "string"

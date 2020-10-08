@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "bundles",
   "info": {
-    "name": "Bundles"
+    "name": "Bundles",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
@@ -20,9 +22,6 @@
     },
     "tools": {
       "collection": "tools"
-    },
-    "code": {
-      "type": "integer"
     }
   }
 }

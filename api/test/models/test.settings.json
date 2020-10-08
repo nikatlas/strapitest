@@ -3,11 +3,13 @@
   "connection": "default",
   "collectionName": "tests",
   "info": {
-    "name": "Test"
+    "name": "Test",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
@@ -15,11 +17,6 @@
     },
     "description": {
       "type": "richtext"
-    },
-    "code": {
-      "type": "integer",
-      "unique": true,
-      "required": true
     }
   }
 }

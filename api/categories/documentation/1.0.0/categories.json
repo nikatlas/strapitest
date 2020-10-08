@@ -580,9 +580,6 @@
                 "similars": {
                   "type": "string"
                 },
-                "code": {
-                  "type": "integer"
-                },
                 "created_by": {
                   "type": "string"
                 },
@@ -615,9 +612,6 @@
               "parent": {
                 "type": "string"
               },
-              "code": {
-                "type": "integer"
-              },
               "created_by": {
                 "type": "string"
               },
@@ -625,9 +619,6 @@
                 "type": "string"
               }
             }
-          },
-          "code": {
-            "type": "integer"
           }
         }
       },
@@ -647,9 +638,6 @@
           },
           "parent": {
             "type": "string"
-          },
-          "code": {
-            "type": "integer"
           },
           "created_by": {
             "type": "string"
