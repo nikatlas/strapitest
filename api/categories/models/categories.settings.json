@@ -6,7 +6,7 @@
     "name": "Categories"
   },
   "options": {
-    "increments": true,
+    "increments": false,
     "timestamps": true
   },
   "attributes": {

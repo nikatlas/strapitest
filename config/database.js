@@ -10,7 +10,8 @@ module.exports = ({ env }) => {
             "filename": ".tmp/data.db"
           },
           "options": {
-            "useNullAsDefault": true
+            "useNullAsDefault": true,
+            debug: false
           }
         }
       }

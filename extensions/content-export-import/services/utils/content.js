@@ -1,15 +1,28 @@
+var Bookshelf = require('bookshelf').mysqlAuth;
+
+const filterModel = (model, item) => {
+  let res = {};
+  for(var i in model._attributes)
+    if(item[i])
+      res[i] = item[i];
+  return res;
+}
 const importItemByContentType = (id, item) => {
   return strapi.query(id).create(item);
 };
 
 const importSingleType = async (uid, item) => {
-  const existing = await strapi.query(uid).find({ code: item.code });
+  let { id, ...rest } = item;
+  const existing = await strapi.query(uid).find({ id: id });
   if (existing.length > 0) {
     return strapi.query(uid).update({
-      code: existing[0].code,
-    }, item)
+      id: existing[0].id
+    }, rest)
   } else {
-    return strapi.query(uid).create({ ...item, code: item.code });
+    let model = strapi.query(uid).model;
+    let fitem = filterModel(model,rest);
+    return model.forge({id}).save(fitem, {method: 'insert'});
+    // return strapi.query(uid).create({__id:item.id, _id:item.id, ...item});
   }
 };
 
