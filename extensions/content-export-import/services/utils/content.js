@@ -24,11 +24,10 @@ const importSingleType = async (uid, item) => {
   const existing = await strapi.query(uid).find({ id: id });
 
   if (existing.length > 0) {
-    return strapi.query(uid).update({
-      id: existing[0].id
-    }, fitem)
+    return strapi.query(uid).update({ id }, fitem)
   } else {
-    return model.forge({id}).save(fitem, {method: 'insert'});
+    await model.forge({id}).save(null, {method: 'insert'});
+    return strapi.query(uid).update({ id }, fitem) 
     // return strapi.query(uid).create({__id:item.id, _id:item.id, ...item});
   }
 };
