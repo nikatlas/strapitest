@@ -2,11 +2,12 @@ var Bookshelf = require('bookshelf').mysqlAuth;
 
 const filterModel = (model, item) => {
   let res = {};
+  // console.log(model._attributes)
   for(var i in model._attributes)
     if(item[i]){
       if(model._attributes[i].type) {
         res[i] = item[i];
-      } else if (model._attributes[i].collection) {
+      } else if (model._attributes[i].model) {
         res[i] = JSON.parse(item[i]);
       }
     }
