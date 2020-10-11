@@ -7,7 +7,7 @@ const filterModel = (model, item) => {
     if(item[i]){
       if(model._attributes[i].type) {
         res[i] = item[i];
-      } else if (model._attributes[i].model) {
+      } else if (model._attributes[i].collection) {
         res[i] = JSON.parse(item[i]);
       }
     }

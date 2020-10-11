@@ -7,4 +7,5 @@ module.exports = ({ env }) => ({
 	      secret: env('ADMIN_JWT_SECRET'),
 	    },
 	},
+	SQLITE_MAX_VARIABLE_NUMBER: 1000000
 });
