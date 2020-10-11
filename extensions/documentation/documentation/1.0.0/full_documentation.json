@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "10/11/2020 6:05:08 PM"
+    "x-generation-date": "10/11/2020 6:40:39 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5982,13 +5982,13 @@
               "links": {
                 "type": "string"
               },
-              "author": {
-                "type": "string"
-              },
               "tools": {
                 "type": "string"
               },
               "similars": {
+                "type": "string"
+              },
+              "author": {
                 "type": "string"
               },
               "created_by": {
@@ -6105,13 +6105,13 @@
                 "links": {
                   "type": "string"
                 },
-                "author": {
-                  "type": "string"
-                },
                 "tools": {
                   "type": "string"
                 },
                 "similars": {
+                  "type": "string"
+                },
+                "author": {
                   "type": "string"
                 },
                 "created_by": {
@@ -6448,28 +6448,6 @@
               }
             }
           },
-          "author": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "icon": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "tools": {
             "required": [
               "id"
@@ -6533,13 +6511,35 @@
               "links": {
                 "type": "string"
               },
-              "author": {
-                "type": "string"
-              },
               "tools": {
                 "type": "string"
               },
               "similars": {
+                "type": "string"
+              },
+              "author": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "author": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "icon": {
                 "type": "string"
               },
               "created_by": {
@@ -6578,13 +6578,13 @@
           "links": {
             "type": "string"
           },
-          "author": {
-            "type": "string"
-          },
           "tools": {
             "type": "string"
           },
           "similars": {
+            "type": "string"
+          },
+          "author": {
             "type": "string"
           },
           "created_by": {

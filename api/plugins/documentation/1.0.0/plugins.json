@@ -730,28 +730,6 @@
               }
             }
           },
-          "author": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "icon": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
           "tools": {
             "required": [
               "id"
@@ -815,13 +793,35 @@
               "links": {
                 "type": "string"
               },
-              "author": {
-                "type": "string"
-              },
               "tools": {
                 "type": "string"
               },
               "similars": {
+                "type": "string"
+              },
+              "author": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "author": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "icon": {
                 "type": "string"
               },
               "created_by": {
@@ -860,13 +860,13 @@
           "links": {
             "type": "string"
           },
-          "author": {
-            "type": "string"
-          },
           "tools": {
             "type": "string"
           },
           "similars": {
+            "type": "string"
+          },
+          "author": {
             "type": "string"
           },
           "created_by": {

@@ -47,14 +47,14 @@
     "links": {
       "collection": "links"
     },
-    "author": {
-      "model": "authors"
-    },
     "tools": {
       "collection": "tools"
     },
     "similars": {
       "collection": "plugins"
+    },
+    "author": {
+      "model": "authors"
     }
   }
 }

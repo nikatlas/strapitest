@@ -571,13 +571,13 @@
                 "links": {
                   "type": "string"
                 },
-                "author": {
-                  "type": "string"
-                },
                 "tools": {
                   "type": "string"
                 },
                 "similars": {
+                  "type": "string"
+                },
+                "author": {
                   "type": "string"
                 },
                 "created_by": {

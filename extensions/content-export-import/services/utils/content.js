@@ -9,6 +9,8 @@ const filterModel = (model, item) => {
         res[i] = item[i];
       } else if (model._attributes[i].collection) {
         res[i] = JSON.parse(item[i]);
+      } else if (model._attributes[i].model) {
+        res[i] = parseInt(item[i]);
       }
     }
   return res;
