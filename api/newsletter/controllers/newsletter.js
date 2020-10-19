@@ -18,7 +18,7 @@ module.exports = {
 	    	entity = await strapi.services.newsletter.create(ctx.request.body);
 	    	return sanitizeEntity(entity, { model: strapi.models.newsletter });
 	    } else {
-	    	return 400;
+	    	return ctx.throw(400, "Wrong email provided!");
 	    }
-	},
+	}
 };
