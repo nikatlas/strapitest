@@ -23,7 +23,6 @@ const importSingleType = async (uid, item) => {
   const { id, ...rest } = item;
   const model = strapi.query(uid).model;
   const fitem = filterModel(model,rest);
-  
   const existing = await strapi.query(uid).find({ id: id });
 
   if (existing.length > 0) {
