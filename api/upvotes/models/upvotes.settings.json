@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "upvotes",
+  "info": {
+    "name": "upvotes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ip": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "plugins": {
+      "collection": "plugins"
+    }
+  }
+}

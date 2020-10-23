@@ -1,5 +1,16 @@
 var Bookshelf = require('bookshelf').mysqlAuth;
 
+const isGood = (model, item) => {
+  // console.log(model);
+  switch(model.modelName) {
+    case 'plugins':
+      if (!item.tools[0] || !item.author)
+        return false;
+      break;
+  }
+  return true;
+}
+
 const filterModel = (model, item) => {
   let res = {};
   // console.log(model._attributes)
@@ -23,6 +34,8 @@ const importSingleType = async (uid, item) => {
   const { id, ...rest } = item;
   const model = strapi.query(uid).model;
   const fitem = filterModel(model,rest);
+  if(!isGood(model, fitem)) return deleteByIds(uid, [id]);
+
   const existing = await strapi.query(uid).find({ id: id });
 
   if (existing.length > 0) {
@@ -43,10 +56,16 @@ const deleteByIds = (uid, ids) => {
     id_in: ids
   });
 };
+const deleteByReverseIds = (uid, ids) => {
+  return strapi.query(uid).delete({
+    id_nin: ids
+  });
+};
 
 module.exports = {
   importItemByContentType,
   findAll,
   deleteByIds,
+  deleteByReverseIds,
   importSingleType,
 };

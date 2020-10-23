@@ -10,6 +10,14 @@
     },
     {
       "method": "GET",
+      "path": "/plugins/upvote/:id",
+      "handler": "plugins.upvote",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
       "path": "/plugins/doubles",
       "handler": "functions.findDoubles",
       "config": {

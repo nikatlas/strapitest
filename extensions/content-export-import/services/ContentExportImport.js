@@ -12,12 +12,15 @@ const _ = require('lodash');
 module.exports = {
   importData: async (ctx) => {
     const { targetModel, source, kind } = ctx.request.body;
+    let ids = [];
     try {
       if (kind === 'collectionType' && Array.isArray(source)) {
         for (let i = 0; i < source.length; i++) {
           //await uitls.importItemByContentType(targetModel, source[i])
-          await uitls.importSingleType(targetModel, source[i])
+          await uitls.importSingleType(targetModel, source[i]);
+          ids.push(source[i].id);
         }
+        await utils.deleteByReverseIds(targetModel, ids);
       } else {
         await uitls.importSingleType(targetModel, source);
       }

@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/plugins": {
+    "/upvotes": {
       "get": {
         "deprecated": false,
-        "description": "Find all the plugins's records",
+        "description": "Find all the upvotes's records",
         "responses": {
           "200": {
-            "description": "Retrieve plugins document(s)",
+            "description": "Retrieve upvotes document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Plugins"
+                    "$ref": "#/components/schemas/Upvotes"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Plugins"
+          "Upvotes"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new plugins record",
+        "description": "Create a new upvotes record",
         "responses": {
           "200": {
-            "description": "Retrieve plugins document(s)",
+            "description": "Retrieve upvotes document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Plugins"
+                  "$ref": "#/components/schemas/Upvotes"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Plugins"
+          "Upvotes"
         ],
         "requestBody": {
           "description": "",
@@ -247,88 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPlugins"
+                "$ref": "#/components/schemas/NewUpvotes"
               }
             }
           }
         }
       }
     },
-    "/plugins/upvote/{id}": {
+    "/upvotes/count": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Retrieve the numver of upvotes documents",
         "responses": {
           "200": {
-            "description": "Retrieve plugins document(s)",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Plugins"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "description": "",
-            "deprecated": false,
-            "required": true,
-            "schema": {
-              "type": "string"
-            }
-          }
-        ]
-      }
-    },
-    "/plugins/count": {
-      "get": {
-        "deprecated": false,
-        "description": "Retrieve the numver of plugins documents",
-        "responses": {
-          "200": {
-            "description": "Retrieve plugins document(s)",
+            "description": "Retrieve upvotes document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -374,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Plugins"
+          "Upvotes"
         ],
         "parameters": []
       }
     },
-    "/plugins/{id}": {
+    "/upvotes/{id}": {
       "get": {
         "deprecated": false,
-        "description": "Find one plugins record",
+        "description": "Find one upvotes record",
         "responses": {
           "200": {
-            "description": "Retrieve plugins document(s)",
+            "description": "Retrieve upvotes document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Plugins"
+                  "$ref": "#/components/schemas/Upvotes"
                 }
               }
             }
@@ -427,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Plugins"
+          "Upvotes"
         ],
         "parameters": [
           {
@@ -444,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a single plugins record",
+        "description": "Update a single upvotes record",
         "responses": {
           "200": {
-            "description": "Retrieve plugins document(s)",
+            "description": "Retrieve upvotes document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Plugins"
+                  "$ref": "#/components/schemas/Upvotes"
                 }
               }
             }
@@ -489,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Plugins"
+          "Upvotes"
         ],
         "requestBody": {
           "description": "",
@@ -497,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPlugins"
+                "$ref": "#/components/schemas/NewUpvotes"
               }
             }
           }
@@ -517,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a single plugins record",
+        "description": "Delete a single upvotes record",
         "responses": {
           "200": {
-            "description": "deletes a single plugins based on the ID supplied",
+            "description": "deletes a single upvotes based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -563,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Plugins"
+          "Upvotes"
         ],
         "parameters": [
           {
@@ -582,245 +514,19 @@
   },
   "components": {
     "schemas": {
-      "Plugins": {
+      "Upvotes": {
         "required": [
-          "id"
+          "id",
+          "ip"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
-          "name": {
+          "ip": {
             "type": "string"
           },
-          "description": {
-            "type": "string"
-          },
-          "images": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "categories": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "description": {
-                  "type": "string"
-                },
-                "plugins": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "parent": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "icon": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "stars": {
-            "type": "integer"
-          },
-          "last_update": {
-            "type": "string"
-          },
-          "short_description": {
-            "type": "string"
-          },
-          "links": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "link": {
-                "type": "string"
-              },
-              "tool": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "tools": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "icon": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "similars": {
+          "plugins": {
             "required": [
               "id"
             ],
@@ -878,64 +584,24 @@
               }
             }
           },
-          "author": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "icon": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
+          "published_at": {
+            "type": "datetime"
           }
         }
       },
-      "NewPlugins": {
+      "NewUpvotes": {
+        "required": [
+          "ip"
+        ],
         "properties": {
-          "name": {
+          "ip": {
             "type": "string"
           },
-          "description": {
+          "plugins": {
             "type": "string"
           },
-          "categories": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
-          },
-          "stars": {
-            "type": "integer"
-          },
-          "last_update": {
-            "type": "string"
-          },
-          "short_description": {
-            "type": "string"
-          },
-          "links": {
-            "type": "string"
-          },
-          "tools": {
-            "type": "string"
-          },
-          "similars": {
-            "type": "string"
-          },
-          "author": {
-            "type": "string"
+          "published_at": {
+            "type": "datetime"
           },
           "created_by": {
             "type": "string"
@@ -949,7 +615,7 @@
   },
   "tags": [
     {
-      "name": "Plugins"
+      "name": "Upvotes"
     }
   ]
 }
