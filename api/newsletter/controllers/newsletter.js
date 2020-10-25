@@ -15,7 +15,9 @@ module.exports = {
 		let b = ctx.request.body;
 	    if(b.email && validateEmail(b.email)) {
 	    	let entity;
-	    	entity = await strapi.services.newsletter.create(ctx.request.body);
+	    	entity = await strapi.query('newsletter').findOne({ email: b.email });
+	    	if(!entity)
+	    		entity = await strapi.services.newsletter.create(ctx.request.body);
 	    	return sanitizeEntity(entity, { model: strapi.models.newsletter });
 	    } else {
 	    	return ctx.throw(400, "Wrong email provided!");
