@@ -29,12 +29,12 @@ module.exports = {
 			await strapi.query('plugins').update({id}, {stars: (plugin[0].stars || 1) - 1})
 			// remove from memory
 			await strapi.query('upvotes').update({ip: rip}, { plugins: plugins.filter((i) => i != id) })
-			ctx.send({ message: "Removed upvote successfully!", status: "ok" });
+			ctx.send({ message: "Removed upvote successfully!", status: "ok" }, 204);
 		} else {
 			await strapi.query('plugins').update({id}, {stars: (plugin[0].stars || 0) + 1})
 			// add to memory
 			await strapi.query('upvotes').update({ip: rip}, { plugins: [...(plugins || []), id] })
-			ctx.send({ message: "Upvoted successfully!", status: "ok" });
+			ctx.send({ message: "Upvoted successfully!", status: "ok" }, 200);
 		}
 	} 
 };
