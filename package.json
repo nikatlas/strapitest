@@ -12,7 +12,7 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "csv-parse": "^4.10.1",
     "json-2-csv": "^3.7.0",
     "knex": "<0.20.0",
