@@ -23,7 +23,7 @@
     "strapi-connector-bookshelf": "v3.2.1",
     "strapi-plugin-content-export-import": "0.0.2",
     "strapi-plugin-content-manager": "v3.2.1",
-    "strapi-plugin-content-type-builder": "v3.2.1",
+    "strapi-plugin-content-type-builder": "v3.2.5",
     "strapi-plugin-documentation": "v3.2.1",
     "strapi-plugin-email": "v3.2.1",
     "strapi-plugin-graphql": "v3.2.1",
