@@ -17,7 +17,7 @@
     "json-2-csv": "^3.7.0",
     "knex": "<0.20.0",
     "node-fetch": "^2.6.1",
-    "sqlite3": "^5.0.0",
+    "sqlite3": "^5.0.3",
     "strapi": "v3.2.1",
     "strapi-admin": "v3.2.1",
     "strapi-connector-bookshelf": "v3.2.1",
